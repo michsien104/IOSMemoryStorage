@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="18G103" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ReadingsCore" representedClassName="ReadingsCore" syncable="YES" codeGenerationType="class">
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="value" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="sensor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SensorsCore" inverseName="reading" inverseEntity="SensorsCore"/>
+    </entity>
+    <entity name="SensorsCore" representedClassName="SensorsCore" syncable="YES" codeGenerationType="class">
+        <attribute name="descriptions" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="reading" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ReadingsCore" inverseName="sensor" inverseEntity="ReadingsCore"/>
+    </entity>
+    <elements>
+        <element name="SensorsCore" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="ReadingsCore" positionX="-291.65625" positionY="184.37109375" width="128" height="88"/>
+    </elements>
+</model>

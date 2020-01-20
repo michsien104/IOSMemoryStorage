@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IOS_Memory_Storage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="XCu-Jt-tmV">
+                                <rect key="frame" x="8" y="44" width="398" height="194"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="t2t-37-5cX">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ae8-wz-5GY">
+                                                <rect key="frame" x="0.0" y="0.0" width="168.5" height="50"/>
+                                                <state key="normal" title="Generate Archiving"/>
+                                                <connections>
+                                                    <action selector="generateArchiving:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LDf-O5-P9J"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsv-Oa-GjX">
+                                                <rect key="frame" x="229.5" y="0.0" width="168.5" height="50"/>
+                                                <state key="normal" title="Test Archiving"/>
+                                                <connections>
+                                                    <action selector="testArchiving:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jbg-dL-RZi"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="xsv-Oa-GjX" firstAttribute="width" secondItem="ae8-wz-5GY" secondAttribute="width" id="YCS-fJ-TwO"/>
+                                            <constraint firstAttribute="height" constant="50" id="YnU-zF-h2O"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="Uad-b0-glR">
+                                        <rect key="frame" x="0.0" y="72" width="398" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kj3-kp-zl6">
+                                                <rect key="frame" x="0.0" y="0.0" width="168.5" height="50"/>
+                                                <state key="normal" title="Generate SQLite"/>
+                                                <connections>
+                                                    <action selector="generateSQLite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eFu-ex-3GM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1f-j5-pAO">
+                                                <rect key="frame" x="229.5" y="0.0" width="168.5" height="50"/>
+                                                <state key="normal" title="Test SQLite"/>
+                                                <connections>
+                                                    <action selector="testSQLite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MbS-1z-TW6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="k1f-j5-pAO" firstAttribute="width" secondItem="kj3-kp-zl6" secondAttribute="width" id="edz-Oi-HLs"/>
+                                            <constraint firstAttribute="height" constant="50" id="zlT-kk-cYF"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="Deq-r4-48j">
+                                        <rect key="frame" x="0.0" y="144" width="398" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfK-2e-Hmi">
+                                                <rect key="frame" x="0.0" y="0.0" width="168.5" height="50"/>
+                                                <state key="normal" title="Generate CoreData"/>
+                                                <connections>
+                                                    <action selector="generateCoreData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MhR-VW-b1M"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZx-xG-PbS">
+                                                <rect key="frame" x="229.5" y="0.0" width="168.5" height="50"/>
+                                                <state key="normal" title="Test CoreData"/>
+                                                <connections>
+                                                    <action selector="testCoreData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BbL-7X-Rdo"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="OQV-uF-zzi"/>
+                                            <constraint firstItem="KZx-xG-PbS" firstAttribute="width" secondItem="OfK-2e-Hmi" secondAttribute="width" id="uKQ-q7-I4t"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Uad-b0-glR" secondAttribute="trailing" id="Huw-bT-w4X"/>
+                                    <constraint firstAttribute="trailing" secondItem="Deq-r4-48j" secondAttribute="trailing" id="LRd-io-xqp"/>
+                                    <constraint firstAttribute="trailing" secondItem="t2t-37-5cX" secondAttribute="trailing" id="SEX-EJ-bRE"/>
+                                </constraints>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5PB-fx-HL5">
+                                <rect key="frame" x="8" y="246" width="398" height="570"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="11"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPm-4V-xCy">
+                                <rect key="frame" x="8" y="824" width="398" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="mnC-3z-v1N"/>
+                                </constraints>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8sn-e0-FsR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jPm-4V-xCy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="22N-md-gdg"/>
+                            <constraint firstItem="XCu-Jt-tmV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3DF-Nk-yGd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jPm-4V-xCy" secondAttribute="trailing" constant="8" id="MoS-bD-8Ie"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5PB-fx-HL5" secondAttribute="trailing" constant="8" id="N06-8k-cZT"/>
+                            <constraint firstItem="jPm-4V-xCy" firstAttribute="top" secondItem="5PB-fx-HL5" secondAttribute="bottom" constant="8" id="QJB-Qg-1h0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XCu-Jt-tmV" secondAttribute="trailing" constant="8" id="VIz-Hn-Jcj"/>
+                            <constraint firstItem="5PB-fx-HL5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="VV6-cR-JRB"/>
+                            <constraint firstItem="5PB-fx-HL5" firstAttribute="top" secondItem="XCu-Jt-tmV" secondAttribute="bottom" constant="8" id="Wm2-S7-R8M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jPm-4V-xCy" secondAttribute="bottom" constant="8" id="cYn-VC-8Qm"/>
+                            <constraint firstItem="XCu-Jt-tmV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="hu2-ve-bEe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="5PB-fx-HL5" id="NRe-35-Xwe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="120.53571428571428"/>
+        </scene>
+    </scenes>
+</document>
